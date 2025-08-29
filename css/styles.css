@@ -373,10 +373,38 @@ footer .navbar-brand {
 }
 
 footer .social-links a { margin: 0 10px; }
+
 /* ===================== FORM ===================== */
 .form-control:focus {
   box-shadow: none;
   border-color: var(--primary);
+}
+
+
+/* ===================== Fix top nav clickable links color ===================== */
+.top-nav p a {
+  color: var(--white); /* keep original white color */
+  text-decoration: none;
+}
+
+.top-nav p a:hover {
+  color: #d1ffd2; /* optional: slightly lighter on hover */
+}
+
+/* Ensure WhatsApp phone link keeps original styling */
+.top-nav p a i {
+  vertical-align: middle;
+}
+
+/*===================== Top nav email & phone links hover effect =====================*/
+.top-nav p a {
+  color: var(--white);       /* default color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top-nav p a:hover {
+  color: #063970;           /* hover color (light green) */
 }
 
 
